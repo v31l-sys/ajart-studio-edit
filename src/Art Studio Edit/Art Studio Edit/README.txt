@@ -1,4 +1,4 @@
-﻿Shared By cfr0st - BE HAPPY !
+﻿Shared By f1r3fr0st - BE HAPPY !
 
                  .:rLfth1FUtYJ7ri:.                                        
                 ::iiri77jthXbbDbZDRDR9Fci                                  
@@ -43,7 +43,7 @@
                   .:i7LJYJcc7Lrri:::::,:,:,,.:rJt2JUjULL77Y1UfUFJ7r.,:,,,Jr
                            ...,.rti::,:,:,:,,..   rh1c7rLUhUtjf2Jr,.:,:,c7.
 
-Have any ideas on my next project? Contact me on GitHub @cfr0st
+Have any ideas on my next project? Contact me on GitHub @f1r3fr0st
   
 1. !Important! This program requires installing WinPcap, which can
 	be found here: https://www.winpcap.org/install/ or in the

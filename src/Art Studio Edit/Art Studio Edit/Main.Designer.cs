@@ -149,7 +149,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(500, 17);
             this.label4.TabIndex = 16;
-            this.label4.Text = "AJ Art Converter - a program by cfr0st";
+            this.label4.Text = "AJ Art Converter - a program by f1r3fr0st";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // uuid_capture
