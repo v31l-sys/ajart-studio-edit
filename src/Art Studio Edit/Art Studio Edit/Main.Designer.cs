@@ -245,7 +245,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Art Studio Edit v1.1";
+            this.Text = "Art Studio Edit v1.3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
