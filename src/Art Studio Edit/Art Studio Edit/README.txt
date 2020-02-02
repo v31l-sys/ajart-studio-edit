@@ -45,16 +45,21 @@
 
 Have any ideas on my next project? Contact me on GitHub @f1r3fr0st
   
-1. !Important! This program requires installing WinPcap, which can
-	be found here: https://www.winpcap.org/install/ or in the
-	root release file directory as "WinPcap_4_1_3.exe".
+1. !Important! This program requires installing Npcap, the latest
+	version can be found here: https://nmap.org/npcap/ or in the
+	root release file directory as "npcap-0.9986.exe".
 
 2. Start "Art Studio Edit.exe"
 
-3. Press "Get UUID" and log in to Animal Jam, this will
+3. Select the network adapter you are capturing network traffic from.
+   Network adapters can be found in the Control Panel:
+   Control Panel => "Network and Internet" => "Network and Sharing Center"
+   => "Change adapter settings"
+
+4. Press "Get UUID" and log in to Animal Jam, this will
    monitor the network to capture the UUID while logging in.
 
-4. "Browse", you may choose a (.ajart / .ajgart file -> Decode),
+5. "Browse", you may choose a (.ajart / .ajgart file -> Decode),
    or (.bmp, .jpg, .png -> Encode). When encoding
    new .ajart files, I recommend the height and width
    of the image to be 711p wide and 434p high -- this
@@ -66,7 +71,7 @@ Have any ideas on my next project? Contact me on GitHub @f1r3fr0st
    has to be scaled by a factor of 14 (714p x 434p) with
    hard edges (so that they're not softened when scaled)
    
-5. "Encode" or "Decode". When decoding, you are always
+6. "Encode" or "Decode". When decoding, you are always
    selecting a .ajart file, this will save a decoded 
    image in the same directory with a .png extension.
    (Note: you must have the right UUID to decode!).

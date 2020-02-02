@@ -15,6 +15,7 @@
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -29,7 +30,6 @@
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -52,11 +52,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Goescat-Macaron-Calligra-krita.ico</ApplicationIcon>
+    <ApplicationIcon>168.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="AMF3SpecCLI">
       <HintPath>..\..\..\..\AMF3SpecCLI\x64\Release\AMF3SpecCLI.dll</HintPath>
@@ -129,6 +130,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="168.ico" />
     <Content Include="Resources\ECLiPSE_CyberMotion_3D_Designer_10_0_kg1.mp3" />
     <EmbeddedResource Include="Resources\Ionic.Zlib.dll" />
     <EmbeddedResource Include="Resources\NAudio.dll" />
@@ -137,7 +139,6 @@
     <EmbeddedResource Include="Resources\PcapDotNet.Core.Extensions.dll" />
     <EmbeddedResource Include="Resources\PcapDotNet.Packets.dll" />
     <EmbeddedResource Include="Resources\AMF3SpecCLI.dll" />
-    <Content Include="Goescat-Macaron-Calligra-krita.ico" />
     <Content Include="Resources\cubes.gif" />
   </ItemGroup>
   <ItemGroup>
