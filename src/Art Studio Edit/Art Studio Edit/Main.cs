@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using Ionic.Zlib;
 using PcapDotNet.Core;
 using PcapDotNet.Packets;
+using System.Net.NetworkInformation;
 
 namespace Art_Studio_Edit
 {
@@ -17,6 +18,7 @@ namespace Art_Studio_Edit
     {
         //Just some global self-describing variables
         static string uuid = "";
+        static string adapter = "";
         static byte[] _keybytes_ = new byte[0];
         static byte[] _ivbytes_ = new byte[0];
 
@@ -33,7 +35,7 @@ namespace Art_Studio_Edit
 
             /////////////////////////////////////////////////////////////////////////
             /// Setting up automatic audio playback (NAudio)
-            MemoryStream mp3file = new MemoryStream(Properties.Resources.PowerISO);
+            MemoryStream mp3file = new MemoryStream(Properties.Resources.ECLiPSE_CyberMotion);
             NAudio.Wave.WaveStream pcm = NAudio.Wave.WaveFormatConversionStream.CreatePcmStream(new NAudio.Wave.Mp3FileReader(mp3file));
             NAudio.Wave.BlockAlignReductionStream stream = new NAudio.Wave.BlockAlignReductionStream(pcm);
             NAudio.Wave.DirectSoundOut output = new NAudio.Wave.DirectSoundOut(700); //audio latency (to stop crackling)
@@ -55,10 +57,22 @@ namespace Art_Studio_Edit
 
             if(uuid_combobox.Items.Count > 0)
                 uuid_combobox.SelectedIndex = 0;
+
+            //gets and lists all available network interfaces
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (NetworkInterface nic in nics)
+                if (nic.OperationalStatus == OperationalStatus.Up)
+                {
+                    adapter_combobox.Items.Add(String.Format("{0}: {1}", nic.Name, nic.Id));
+                }
+
+            if (adapter_combobox.Items.Count > 0)
+                adapter_combobox.SelectedIndex = 0;
         }
 
         //Toggles packet capturing to get a UUID on or off
-        //Reads packets through WinPcap
+        //Reads packets through Npcap
+        //Queries based on selected network adapter
         private void getuuid_button_Click(object sender, EventArgs e)
         {
             if(uuid_capture.Text == "[UUID Capture is Off]")
@@ -66,12 +80,7 @@ namespace Art_Studio_Edit
                 uuid_capture.Text = "[UUID Capture is On]";
                 _shouldStop = false;
 
-                IList<LivePacketDevice> allDevices = LivePacketDevice.AllLocalMachine;
-                for (int i = 0; i < allDevices.Count - 1; i++)
-                {
-                    new Thread(() => { MonitorNetwork(allDevices[i]); }).Start();
-                }
-
+                new Thread(() => { MonitorNetwork(LivePacketDevice.AllLocalMachine.FirstOrDefault(nic => nic.Name.Contains(adapter)));}).Start();
             } else
             {
                 uuid_capture.Text = "[UUID Capture is Off]";
@@ -334,6 +343,13 @@ namespace Art_Studio_Edit
                 _keybytes_ = Encoding.Default.GetBytes(_key_);
                 _ivbytes_ = Encoding.Default.GetBytes(_iv_);
             }
+        }
+
+        private void adapter_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = adapter_combobox.GetItemText(adapter_combobox.SelectedItem);
+            Match match = Regex.Match(temp, @"(?: )(\{[\w|-]+\})");
+            adapter = match.Groups[1].ToString();
         }
     }
 }

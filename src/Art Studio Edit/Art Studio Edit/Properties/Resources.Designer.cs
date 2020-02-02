@@ -143,9 +143,9 @@ namespace Art_Studio_Edit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PowerISO {
+        internal static byte[] ECLiPSE_CyberMotion {
             get {
-                object obj = ResourceManager.GetObject("PowerISO", resourceCulture);
+                object obj = ResourceManager.GetObject("ECLiPSE_CyberMotion", resourceCulture);
                 return ((byte[])(obj));
             }
         }

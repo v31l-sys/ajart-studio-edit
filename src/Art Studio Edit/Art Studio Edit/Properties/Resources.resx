@@ -136,8 +136,8 @@
   <data name="PcapDotNet_Packets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PcapDotNet.Packets.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PowerISO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\core_power_iso_3_1kg.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ECLiPSE_CyberMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ECLiPSE_CyberMotion_3D_Designer_10_0_kg1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="NAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NAudio.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

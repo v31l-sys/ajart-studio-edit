@@ -129,6 +129,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ECLiPSE_CyberMotion_3D_Designer_10_0_kg1.mp3" />
     <EmbeddedResource Include="Resources\Ionic.Zlib.dll" />
     <EmbeddedResource Include="Resources\NAudio.dll" />
     <EmbeddedResource Include="Resources\PcapDotNet.Base.dll" />
@@ -137,7 +138,6 @@
     <EmbeddedResource Include="Resources\PcapDotNet.Packets.dll" />
     <EmbeddedResource Include="Resources\AMF3SpecCLI.dll" />
     <Content Include="Goescat-Macaron-Calligra-krita.ico" />
-    <Content Include="Resources\core_power_iso_3_1kg.mp3" />
     <Content Include="Resources\cubes.gif" />
   </ItemGroup>
   <ItemGroup>
