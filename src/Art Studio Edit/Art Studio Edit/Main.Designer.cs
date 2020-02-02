@@ -51,7 +51,7 @@
             this.getuuid_button.BackColor = System.Drawing.SystemColors.Control;
             this.getuuid_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.getuuid_button.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.getuuid_button.Location = new System.Drawing.Point(9, 13);
+            this.getuuid_button.Location = new System.Drawing.Point(9, 45);
             this.getuuid_button.Name = "getuuid_button";
             this.getuuid_button.Size = new System.Drawing.Size(111, 29);
             this.getuuid_button.TabIndex = 0;
@@ -159,7 +159,7 @@
             this.uuid_capture.AutoSize = true;
             this.uuid_capture.BackColor = System.Drawing.SystemColors.Window;
             this.uuid_capture.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uuid_capture.Location = new System.Drawing.Point(311, 13);
+            this.uuid_capture.Location = new System.Drawing.Point(311, 45);
             this.uuid_capture.MinimumSize = new System.Drawing.Size(195, 29);
             this.uuid_capture.Name = "uuid_capture";
             this.uuid_capture.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -173,7 +173,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label1.Location = new System.Drawing.Point(125, 13);
+            this.label1.Location = new System.Drawing.Point(124, 45);
             this.label1.MinimumSize = new System.Drawing.Size(180, 29);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -187,7 +187,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(10, 50);
+            this.label2.Location = new System.Drawing.Point(10, 11);
             this.label2.MinimumSize = new System.Drawing.Size(104, 23);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -200,7 +200,7 @@
             // 
             this.adapter_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adapter_combobox.FormattingEnabled = true;
-            this.adapter_combobox.Location = new System.Drawing.Point(123, 51);
+            this.adapter_combobox.Location = new System.Drawing.Point(123, 11);
             this.adapter_combobox.Name = "adapter_combobox";
             this.adapter_combobox.Size = new System.Drawing.Size(383, 23);
             this.adapter_combobox.TabIndex = 21;
